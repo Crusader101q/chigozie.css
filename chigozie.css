@@ -1,0 +1,118 @@
+.product-image{
+  display: block;
+  object-fit: cover;
+}
+.body{
+  background-color:hsl(30, 38%, 92%);
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  
+}
+.image{
+ object-fit: cover;
+ border-top-right-radius: 20px;
+ border-top-left-radius: 20px;
+ width: 550px;
+}
+.main-body{
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  width: 550px;
+}
+.text{
+  display: block;
+  padding: 40px;
+}
+.eau{
+  font-weight: bolder;
+  font-size: 50px;
+  margin-top: -10px;
+}
+.cart-img{
+  height: 30px;
+}
+.cart-button{
+  background-color: hsl(158, 36%, 37%);
+  width: 500px;
+  height: 70px;
+  font-size: 30px;
+  color: white;
+  border-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  margin-left: -13px;
+}
+.solar{
+  font-size: 25px;
+  color: gray;
+}
+.price{
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  font-size: 55px;
+}
+.button-div{
+  display: inline-block;
+  margin-top: 30px;
+  border-bottom-color: hsl(158, 36%, 37%);
+}
+.perfume{
+font-size: 40px;
+font-family: monospace;
+margin-top: -21px;
+color: gray;
+}
+.span{
+  display: inline-block;
+  text-decoration: line-through gray;
+  font-size: 20px;
+  color: rgb(148, 142, 142);
+}
+.cart-button:hover{
+  background-color: hsl(159, 36%, 17%);
+  transition-duration: 0.4s;
+}
+.desktop-product{
+  display: none;
+}
+@media (min-width: 1440px) {
+  .main-body{
+    display: flex;
+    border-radius: 20px;
+    width: fit-content;
+    
+  }
+  .desktop-product{
+    display: inline-block;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+  }
+  .image{
+    display: none;
+   
+  }
+  .desktop-img{
+    background-color: white;
+  }
+  .break::after{
+    content: "\A"; white-space: pre;
+  }
+  .eau{
+    font-size: 70px;
+  }
+  .solar{
+    line-height: 40px;
+  }
+  .perfume{
+    margin-top: 30px;
+
+  }
+  .price{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
